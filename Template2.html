@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Passportfolio/images/Kine.png">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <title>Template 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    <nav id="navbar">
+    <img src="images/KinéLogo.png" alt="Logo" id="Logo" onclick="window.location='file:///C:/Users/alexi/Desktop/Fraudeur/Fraudeur.html'">
+          <a class="Ul" id="a2" href="#Team">Équipe</a>
+          <a class="Ul" id="a1" href="#Gallery">Spécialisations</a>
+          <a class="Ul" id="a4" href="#Contact">Contact</a>
+
+    <div class="popup" id="popup-1">
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>Selectionnez une langue</h1><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_en.html"> English</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1.html"> Français</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_ne.html"> Nederlands</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_de.html"> Deutsch</a>
+      </div>
+    </div>
+
+    <button id="PopPop" onclick="togglePopup()">Langue</button>
+
+    <script type="text/javascript">
+    function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+    }
+    </script>
+    </nav>
+
+    <div id="WTFF">
+      <a id="pass" href="#Team">Équipe</a>
+      <a href="#Gallery">Spécialisations</a>
+      <a href="#Contact">Contact</a>
+    </div>
+
+<div class="Backk"> <h3 class="KR"><br>Centre kiné <br>Rosières</h3> <div class="Appoint"data-s-speed="5">
+  <a href="#"><img src="https://img.icons8.com/ios/40/fdfdfd/calendar.png"/>Prendre rendez-vous</a> </div> </div>
+
+  <div class="Shady">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+<script>
+$(window).scroll(function(){
+  $(".KR").css("opacity",1-$(window).scrollTop()/250);
+});
+
+
+$.fn.moveIt = function() {
+  var $els = $(this);
+  var $window = $(window);
+  var scrollPos = $window.scrollTop();
+
+  $window.on('scroll', function() {
+    scrollPos = $window.scrollTop();
+    $els.each(moveEl);
+  });
+
+  function moveEl() {
+    var $this = $(this);
+    var scrollSpeed = parseInt($this.data('s-speed'));
+    var elPos = scrollPos / scrollSpeed;
+
+    $this.css('transform', 'translateY(-' + elPos + 'px)');
+  }
+}
+
+$(function() {
+  $('[data-s-speed]').moveIt();
+});
+
+
+/*Modal Gallery */
+
+</script>
+
+<div class="About">
+<div class="What">
+<h5>Au centre kiné Rosières nous prenons le temps de traiter le patient dans son entièreté. <br><br>
+  Nous sommes spécialisés en kinésithérapie neurologique, vestibulaire, thérapie manuelle et ostéopathie afin de pouvoir soigner nos patients
+  au mieux selon notre approche biopsychosociale.</h5>
+</div>
+</div>
+
+<div class="Team" id="Team">
+  <div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="Tea" id="Tea1"> <img src="https://img.icons8.com/color/148/000000/circled-user-female-skin-type-4--v1.png" alt="Profile picture" /> <h4>Mathilde De Greef</h4> <p id="Specia"></p id="Quo"><p></p> </div>
+<div class="Tea" id="Tea2"> <img src="https://img.icons8.com/color/148/000000/circled-user-male-skin-type-5--v1.png" alt="Profile picture"/> <h4>Thomas Dusac</h4><p id="Specia"></p><p id="Quo"></p> </div>
+<div class="Tea" id="Tea3"> <img src="https://img.icons8.com/color/148/000000/circled-user-female-skin-type-4--v1.png" alt="Profile picture" /> <h4>Louise Pépin</h4> <p id="Specia"></p id="Quo"><p></p></div>
+
+<div class="wavy">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+</div>
+
+
+<div class="Gallery" id="Gallery">
+<div class="KK" id="KK1"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+  Ostéopathie
+</button></div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ostéopathie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>Connu comme le "thérapeute du mal de dos", l'ostéopathe peut traiter bien plus que les douleurs musculosquelletiques. Il pourra également agir sur les troubles du système cardiovasculaire, digestif, génito-urinaire, neurologique ou encore oto-rhino-laryngologique et pulmonaire. </p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK" id="KK2"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Thérapie manuelle
+</button></div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thérapie manuelle</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>PLusieurs techniques ou autres protocoles de soins manuels qui sont basés sur des manipulations. Ces dernières peuvent être articulaires (structurelles, ou fonctionnelles), viscérales, neuro méninges, réflexes, motionnelles…etc.</p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK"id="KK3"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+  Pédiatrie
+</button></div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pédiatrie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>La pédiatrie est une branche spécialisée de la médecine qui étudie le développement neuro-sensori-moteur et physiologique normal de l'enfant, ainsi que toute la pathologie qui y a trait (maladies infantiles), de la naissance à la période postpubertaire où il devient adulte ; c'est la médecine des enfants.</p>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK" id="KK4"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+  Oncologie
+</button></div>
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Oncologie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>L'oncologie ou carcinologie ou cancérologie est la spécialité médicale d'étude, de diagnostic et de traitement des cancers. </p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK"id="KK5"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+  Gériatrie
+</button></div>
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Gériatrie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>La kiné  gériatrique est la spécialité médicale concernée par les affections physiques, mentales, fonctionnelles et sociales des malades âgés, en particulier lors de soins aigus, chroniques, de réhabilitation, de prévention et en fin de vie.</p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK"id="KK6"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+  Hydrothérapie
+</button></div>
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hydrothérapie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>L'hydrothérapie est une méthode thérapeutique ancienne, qui consiste à prévenir, traiter voire soigner par l'usage de l'eau.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK" id="KK7"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+  Fasciathérapie
+</button></div>
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Fasciathérapie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>Les thérapies des fascias sont des approches de médecine non conventionnelle, généralement manuelles ou gestuelles, qui recourent à la manipulation des fascias, des membranes conjonctives qui enveloppent certains tissus de l'organisme dont plusieurs muscles.</p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="KK" id="KK8"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+  Crochetage
+</button></div>
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crochetage</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Le crochetage est utilisé sur le corps pour soulager les zones douloureuses où les techniques manuelles se révèlent inefficaces, ou trop longues à apporter un mieux-être aux patients. Si le crochet se substitue aux doigts, le kinésithérapeute se doit de connaître l'anatomie palpatoire parfaitement.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+
+  <div class="Reach" id="Reach">
+    <div class="H Cont"> <p>Heures d'ouverture: <br><br>lundi-vendredi   8-18h <br>samedi  10-14h </p> </div>
+    <div class="Adresss Cont"> <p>Adresse: Rue Baron Lambert 10, 1040 Etterbeek</p> </div>
+    <div class="Joindre Cont">Vous pouvez nous joindre via le +32*** *** *** ou via kiné@gmail.com</div>
+    <a class="OBooking Cont" href="#">Prendre rendez-vous</a>
+    <div id="map"></div>
+    <script>
+      var map = L.map('map').setView([50.835802,4.388437], 12);
+      L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=wOZASeM13ieZGp1NU9gS',{attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    }).addTo(map);
+    var marker = L.marker([50.835802,4.388437]).addTo(map);
+    </script>
+  </div>
+
+
+  <div class="Contact" id="Contact">
+    <div class="containerr">
+    <div class="FormBox">
+        <form method="post">
+            <h2 id="h2">Contactez-nous</h2>
+            <div class="InputBox">
+                <input type="text" name="name" required="required">
+                <span class="spann">Nom</span>
+            </div>
+            <div class="InputBox">
+                <input type="email" name="email" required="required">
+                <span class="spann">E-mail</span>
+            </div>
+            <div class="InputBox">
+                <textarea name="message" required="required"></textarea>
+                <span class="spann">Votre message</span>
+            </div>
+            <div class="InputBox" id="Submit">
+                <input type="submit" id="submittt" value="Envoyer">
+            </div>
+        </form>
+    </div>
+    </div>
+  </div>
+
+
+  </body>
+</html>

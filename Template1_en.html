@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Passportfolio/images/Kine.png">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <title>Template 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Prosto One' rel='stylesheet'>
+  </head>
+  <body>
+
+    <nav id="navbar">
+    <img src="images/KinéLogo.png" alt="Logo" id="Logo" onclick="window.location='file:///C:/Users/alexi/Desktop/Fraudeur/Fraudeur.html'">
+
+          <a class="Ul" id="a1" href="#Speci">Specialisations</a>
+          <a class="Ul" id="a2" href="#Team">Team</a>
+          <a class="Ul" id="a4" href="#Contact">Contact</a>
+
+    <div class="popup" id="popup-1">
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>Select a language</h1><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_en.html"> English</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1.html"> Français</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_ne.html"> Nederlands</a><br><br><br>
+        <a class="a" href="file:///C:/Users/alexi/Desktop/Passportfolio/Template1_de.html"> Deutsch</a>
+      </div>
+    </div>
+
+    <button id="PopPop" onclick="togglePopup()">Language</button>
+
+    <script type="text/javascript">
+    function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+    }
+    </script>
+    </nav>
+
+    <div id="WTFF">
+      <a id="pass"href="#Speci">Specialisations</a>
+      <a href="#Team">Team</a>
+      <a href="#Contact">Contact</a>
+    </div>
+
+<div class="Text1">
+<h2 id="Quo1">"That which enhances performance, prevents injury."</h2><p id="Quoo1">– Larry Hamilton</p>
+</div>
+
+<div class="Photo">
+
+</div>
+
+<div class="Speci" id="Speci" data-s-speed="200">
+<div class="WB" data-s-speed="9">
+<p><br>Our practice is specialized in manual therapy, osteopathy, hydrotherapy, geriatrics and sports physiotherapy. <br> We offer personalized therapy to the patient and his pathology in order to give him the best care!</p>
+</div>
+
+  <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first" id="slide4">
+          </div>
+          <div class="slide" id="slide2">
+          </div>
+          <div class="slide" id="slide3">
+          </div>
+          <div class="slide" id="slide1">
+          </div>
+          <div class="slide" id="slide5">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 5){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+<div class="About" data-s-speed="6">
+  <h4>Whether you are injured, <br> looking for a new lease of life, <br> amateur or professional athletes. <br> We want to be your life partner for all your goals!</h4>
+</div>
+
+</div>
+<script>
+  $.fn.moveIt = function() {
+    var $els = $(this);
+    var $window = $(window);
+    var scrollPos = $window.scrollTop();
+
+    $window.on('scroll', function() {
+      scrollPos = $window.scrollTop();
+      $els.each(moveEl);
+    });
+
+    function moveEl() {
+      var $this = $(this);
+      var scrollSpeed = parseInt($this.data('s-speed'));
+      var elPos = scrollPos / scrollSpeed;
+
+      $this.css('transform', 'translateY(-' + elPos + 'px)');
+    }
+  }
+
+  $(function() {
+    $('[data-s-speed]').moveIt();
+  });
+</script>
+
+<div class="White">
+</div>
+<div id="Team"></div>
+
+<div class="Profile" id="Profile"data-s-speed="200">
+  <div class="back"></div>
+  <div class="P" id="P1" data-s-speed="5"> <div class="PP" id="PP1"></div><h3 class="Nom">Maxime Forest</h3> <p class="Description">General physiotherapy <br>Osteopathy <br>Hydrotherapy </p> </div>
+  <div class="P" id="P2" data-s-speed="10"><div class="PP" id="PP2"></div><h3 class="Nom">Sophie Prairie</h3> <p class="Description">General physiotherapy <br>Lymphatic drainage <br>Geriatry </p></div>
+  <div class="P" id="P3" data-s-speed="24"><div class="PP" id="PP3"></div><h3 class="Nom">Manon Du Lac</h3> <p class="Description">General physiotherapy <br>Manual therapy <br>Sports physiotherapist </p></div>
+</div>
+
+<div class="Gallery">
+
+</div>
+
+<div class="Contact" id="Contact">
+  <div class="H Cont"> <p>Business hours: <br><br>Monday-Friday   8-18h <br>Saturday  10-14h </p> </div>
+  <div class="Adresss Cont"> <p>Address: Rue Baron Lambert 10, 1040 Etterbeek</p> </div>
+  <div class="Joindre Cont">You can join us via +32*** *** *** or via kiné@gmail.com</div>
+  <a class="OBooking Cont" href="#">Schedule an appointment</a>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map').setView([50.835802,4.388437], 12);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=wOZASeM13ieZGp1NU9gS',{attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+  }).addTo(map);
+  var marker = L.marker([50.835802,4.388437]).addTo(map);
+  </script>
+</div>
+
+<div class="Message">
+  <div class= "container">
+        <div class="FormBox">
+            <form method="post">
+                <h2 id="h2">Contact Us</h2>
+                <div class="InputBox">
+                    <input type="text" name="name" required="required">
+                    <span>Name</span>
+                </div>
+                <div class="InputBox">
+                    <input type="email" name="email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="InputBox">
+                    <textarea name="message" required="required"></textarea>
+                    <span>Your message</span>
+                </div>
+                <div class="InputBox" id="Submit">
+                    <input type="submit" id="submittt" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
