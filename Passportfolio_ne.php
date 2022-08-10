@@ -7,35 +7,37 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/webp.js"></script>
     <title>Passportfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Prosto One' rel='stylesheet'>
-    <style media="screen">
-      #JoinMe{left:12%;}
-      #Email{left:47%;}#Phone{left:47%;}
-      #a3{position: absolute;top:24px;left:53%;}
-      #a4{position: absolute;top:24px;left:64%;}
-      @media only screen and (max-width: 991.2px){  .Contact{top:115px;}}
-      @media only screen and (max-width: 772.1px) {#Email{left:20%;}#Phone{left:20%;}.Contact{top:650px;}}
-    </style>
   </head>
   <body>
+    <script>
+      //See if browsers support web
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+        } else {
+          // not-supported
+        }
+      });
+    </script>
 
-    <div class="TreeWater" data-s-speed="200">
-      <div class="Awesomeness" data-s-speed="1">
-        <h1>Hallo, ik ben Alexis</h1>
-        <h3>Ga mee op mijn reis</h3>
-        <a href="#Contact">Contacteer me</a>
+    <div class="TreeWater">
+      <div class="Awesomeness">
+        <h1>Hallo! Ik ben Alexis</h1>
+        <h3>Dit is mijn weg</h3>
+        <a href="#Contact">Neem contact</a>
       </div>
       </div>
-
 
       <nav id="navbar">
-      <img src="images/LogoPP.png" alt="Logo" id="Logo" onclick="window.location='../Passportfolio_ne.html'">
+      <img src="images/LogoPP.png" alt="Logo" id="Logo" onclick="window.location='../Passportfolio.html'">
 
-            <a class="Ul" id="a1" href="#Passport">Mijn werken</a>
-            <a class="Ul" id="a2" href="#Aboutt">Vaardigheden</a>
+            <a class="Ul" id="a1" href="#Passport">Mein Job</a>
+            <a class="Ul" id="a2" href="#About">Skills</a>
             <a class="Ul" id="a3" href="#Productss">Producten</a>
             <a class="Ul" id="a4" href="#Contact">Contact</a>
 
@@ -50,14 +52,8 @@
         </div>
       </div>
 
-      <button id="PopPop" onclick="togglePopup()">Taal</button>
-
-      <script type="text/javascript">
-      function togglePopup(){
-      document.getElementById("popup-1").classList.toggle("active");
-      }
-
-    
+      <button id="PopPop" class="PopPop" onclick="togglePopup()">Taal</button>
+      <script>
       $(document).scroll(function() {
 var y = $(this).scrollTop();
 if (y > 500) {
@@ -68,144 +64,186 @@ if (y > 500) {
 });
       </script>
       <div id="WTFF">
-        <a id="pass"href="#Passport">My works</a>
-        <a href="#Aboutt">Skills</a>
-        <a href="#Productss">Products</a>
+        <a id="pass"href="#Passport">Mijn werk</a>
+        <a href="#About">Skills</a>
+        <a href="#Productss">Producten</a>
         <a href="#Contact">Contact</a>
       </div>
       </nav>
 
-    <div class="Space1" data-s-speed="200">
-    <div class="Passport" id="Passport" data-s-speed="6"></div>
-              <div class="My" data-s-speed="32">
-                <h1>Mijn websites</h1>
-                <a class="col-11 col-lg-5 Web" id="W1" href="https://kinemap.be/home/home_ne.php">
-                  <div class="Weby" id="Weby1"><p><br><br><br>Vind JOUW kiné</p></div>
-                </a>
-                <a class="col-11 col-lg-5 Web" id="W2">
-                <div class="Weby" id="Weby2">  <p><br><br>Bekijk wat mensen <br>consumeren en hoeveel <br>het kost.</p></div>
-              </a>
-                <a class="col-5 col-lg-3 Web" id="W4">
-                  <div class="Weby"><p><br><br>Voorbeeld van een <br>basissjabloon</p></div>
-                </a>
-                <a class="col-5 col-lg-3 Web" id="W5">
-                  <div class="Weby"><p><br><br>Voorbeeld van een <br>basissjabloon</p></div>
-                </a>
-                <a class="col-5 col-lg-3 Web" id="W6">
-                  <div class="Weby"><p><br><br>Voorbeeld van een <br>Traditionele sjabloon</p></div>
-                </a>
-                <a class="col-5 col-lg-3 Web" id="W7">
-                  <div class="Weby" id="Weby7"><p><br><br>Voorbeeld van een volledig <br>gepersonaliseerde website.</p></div>
-                </a>
-                <a class="col-5 col-lg-3 Web" id="W8">
-                <div class="Weby">  <p><br>Krijg een volledig <br>willekeurig en veilig <br>wachtwoord met de <br>gewenste instellingen!</p></div>
-              </a>
-                <a class="col-5 col-lg-3 Web" id="W9">
-                  <div class="Weby" id="Weby9"><p><br><br>Controleer of er bedieningselementen <br>op uw lijn zijn.</p></div>
-                </a>
-              </div>
-          <div class="Sea"></div>
-    </div>
-<div id="Aboutt"></div>
-<div class="Beach" data-s-speed="6">
-        <div id="About">
-        <div class="container">
-          <p><br>Waarom me? Ik ben <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-        </div>
-        <div class="Skills">
-          <div class="Oignon"> <p>Front end</p> </div>
-          <div class="Ski d-none d-xl-block">
-<div class="Front" id="CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/><p id="SKCSS">CSS</p></div>
-<div class="Front" id="HTML"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/><p id="SKHTML">HTML</p></div>
-<div class="Front" id="BOO"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><p id="SKBOO">Bootstrap</p></div>
-        </div>
-        <div class="Oignonn"><p>Back end</p></div>
-        <div class="Skii d-none d-xl-block">
-<div class="Backkk" id="PY"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/><p id="SKPY">Python</p></div>
-<div class="Backkk" id="JAVA"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/><p id="SKJAVA">JavaScript</p></div>
-<div class="Backkk" id="STO"><img src="https://img.icons8.com/color/48/000000/stackoverflow.png"/><p id="SKSTO">Stack Overflow</p></div>
-<div class="Backkk" id="PSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/> <p id="SKPSQL">PostgreSQL</p> </div>
+      <div class="ThisIsMe">
+        <h2>Hoe ben ik gestart?</h2>
+        <p>
+          Het begon als een hobby, op mijn eigen leren terwijl ik mijn bachelor kinesitherapie behaalde aan de VUB. <br>
+          Meteen was ik verslaafd! Nu ben ik fulltime aan het coderen en leef ik de droom!</p>
       </div>
-      <div class="Oignonnn"> <p>Extra</p> </div>
-      <div class="Skiii d-none d-xl-block">
-<div class="Extra" id="BS"><img src="https://img.icons8.com/color/48/000000/soup-plate.png"/> <p id="SKBS">Beautiful Soup</p> </div>
-<div class="Extra" id="SEOOO"><img src="https://img.icons8.com/external-justicon-lineal-justicon/48/f9f9fa/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png"/><p id="SKSEO">SEO</p></div>
-<div class="Extra" id="APIII"><img src="https://img.icons8.com/external-becris-flat-becris/48/000000/external-api-fintech-becris-flat-becris.png"/><p id="SKAPI">API Integration</p></div>
+
+
+    <div class="Space1" id="Passport">
+              <div class="My">
+                <h1>Mijn Websites</h1>
+                <div class="contained">
+                  <div class="cardy">
+                    <div class="imgBx">
+                      <h2>Kinemap</h2>
+                    </div>
+                    <div class="contenty">
+                      <div>
+                        <img src="images/kinemap.jpeg" style="position:relative;left:0;top:35px;width:105px;height:90px;" alt=" ">
+                        <br><br>
+                        <p>Vind UW kiné.<br>Filter tussen de verschillende specialisaties.</p>
+
+                        <a href="https://kinemap.be/" id="yellow">Naar de website</a>
+                        <a href="https://github.com/DonyTrumpy/Kinemap">Code bekijken</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cardy">
+                    <div class="imgBx">
+                      <h2 id="Consumed">Consumed.World</h2>
+                    </div>
+                    <div class="contenty">
+                      <div>
+                        <br><br>
+                        <p id="ConsumptionDescription">Zie en vergelijk wat mensen consumeren en wat de kosten zijn.</p>
+                        <br>
+                        <a href="https://consumed.world/" id="yellow">Naar de website</a>
+                        <a href="https://github.com/DonyTrumpy/ConsumedWorld">Code bekijken</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cardy">
+                    <div class="imgBx">
+                      <h2>Crypto Macro Space</h2>
+                    </div>
+                    <div class="contenty">
+                      <div>
+                        <br>
+                        <p>Hulp nodig bij het begrijpen van de markten, meer specifiek met crypto? Wij geven u het groot beeld en waar u op moet letten.</p>
+                        <a href="#" id="yellow">Binnenkort beschikbaar</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cardy">
+                    <div class="imgBx">
+                      <h2>Fraudeur</h2>
+                    </div>
+                    <div class="contenty">
+                      <div>
+                        <img src="images/fraudeur.jpeg" style="position:relative;left:0;top:10px;width:90px;height:80px;" alt=" ">
+                        <p>Alles wat u nodig heeft voor een veilige en gemakkelijke reis met het openbaar vervoer van Brussel.</p>
+                        <br>
+                        <a href="#" id="yellow">Binnenkort beschikbaar</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cardy">
+                    <div class="imgBx">
+                      <h2>Flappy Ball</h2>
+                    </div>
+                    <div class="contenty">
+                      <div>
+                        <p>Gebaseerd op de originele Flappy Bird die Wall Street bereikte. Meestal gericht op JavaScript.</p>
+                        <br>
+                        <a href="../FlappyBird/index.html" id="yellow">Naar de website</a>
+                        <a href="https://github.com/DonyTrumpy/FlappyBall">Code bekijken</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="area" >
+                            <ul class="circles">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                            </ul>
+                    </div >
+              </div>
     </div>
 
-    <div class="Ske d-block d-xl-none">
-  <div class="Front" id="CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/><p id="SKCSS">CSS</p></div>
-  <div class="Front" id="HTML"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/><p id="SKHTML">HTML</p></div>
-  <div class="Front" id="BOO"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><p id="SKBOO">Bootstrap</p></div>
-  </div>
 
-  <div class="Skee d-block d-xl-none">
-  <div class="Backkk" id="PY"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/><p id="SKPY">Python</p></div>
-  <div class="Backkk" id="JAVA"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/><p id="SKJAVA">JavaScript</p></div>
-  <div class="Backkk" id="STO"><img src="https://img.icons8.com/color/48/000000/stackoverflow.png"/><p id="SKSTO">Stack Overflow</p></div>
-  <div class="Backkk" id="PSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/> <p id="SKPSQL">PostgreSQL</p> </div>
-  </div>
+    <div id="Aboutt"></div>
+    <div class="Beach" data-s-speed="6">
+            <div id="About">
+            <div class="container">
+              <p><br>Waarom ik? Ik ben <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+            <div class="Skills">
+              <div class="Oignon"> <p>Front end</p> </div>
+              <div class="Ski d-none d-xl-block">
+                  <div class="Front" id="CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/><p id="SKCSS">CSS</p></div>
+                  <div class="Front" id="HTML"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/><p id="SKHTML">HTML</p></div>
+                  <div class="Front" id="BOO"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><p id="SKBOO">Bootstrap</p></div>
+              </div>
+            <div class="Oignonn"><p>Back end</p></div>
+            <div class="Skii d-none d-xl-block">
+                <div class="Backkk" id="PY"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/><p id="SKPY">Python</p></div>
+                <div class="Backkk" id="JAVA"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/><p id="SKJAVA">JavaScript</p></div>
+                <div class="Backkk" id="DJANGO"><img src="https://img.icons8.com/ios/70/ffffff/django.png"/></div>
+                <div class="Backkk" id="FAST"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12c6.626 0 12-5.373 12-12c0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z" fill="#2bc2a7"/></svg><p id="SKFAST">FastAPI</p> </div>
+            </div>
+          <div class="Oignonnn"> <p>Extra</p> </div>
+          <div class="Skiii d-none d-xl-block">
+                <div class="Extra" id="SEOOO"><img src="https://img.icons8.com/external-justicon-lineal-justicon/48/f9f9fa/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png"/><p id="SKSEO">SEO</p></div>
+                <div class="Extra" id="GIT"><img src="https://img.icons8.com/color/60/000000/git.png"/><p id="SKGIT">Git</p></div>
+                <div class="Extra" id="AUTH"><img src="images/Oauth.png"/><p id="SKAUTH">OAuth2</p></div>
+                <div class="Extra" id="STRIPE"><img src="https://img.icons8.com/ios/70/ffffff/stripe.png"/></div>
+          </div>
 
-  <div class="Skeee d-block d-xl-none">
-  <div class="Extra" id="BS"><img src="https://img.icons8.com/color/48/000000/soup-plate.png"/> <p id="SKBS">Beautiful Soup</p> </div>
-  <div class="Extra" id="SEOOO"><img src="https://img.icons8.com/external-justicon-lineal-justicon/64/ffffff/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png"/><p id="SKSEO">SEO</p></div>
-  <div class="Extra" id="APIII"><img src="https://img.icons8.com/external-becris-flat-becris/48/000000/external-api-fintech-becris-flat-becris.png"/><p id="SKAPI">API Integration</p></div>
-  </div>
-
-    <div class="Click"> <h4 class="d-none d-xl-block">Neem een ​​stuk taart</h4> <p>Een site heeft, net als een taart, meerdere lagen.</p> </div>
+        <div class="Oignonnnn"> <p>Database</p> </div>
+        <div class="Skiiii d-none d-xl-block">
+            <div class="DB" id="PSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/> <p id="SKPSQL">PostgreSQL</p> </div>
+            <div class="DB" id="MYSQL"><img src="https://img.icons8.com/ios-filled/70/ffffff/mysql-logo.png"/></div>
+            <div class="DB" id="DB2"><img src="images/DB2.png"/></div>
         </div>
 
+        <div class="Ske d-block d-xl-none">
+            <div class="Front" id="CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/><p id="SKCSS">CSS</p></div>
+            <div class="Front" id="HTML"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/><p id="SKHTML">HTML</p></div>
+            <div class="Front" id="BOO"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><p id="SKBOO">Bootstrap</p></div>
+        </div>
+
+      <div class="Skee d-block d-xl-none">
+        <div class="Backkk" id="PY"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/><p id="SKPY">Python</p></div>
+        <div class="Backkk" id="JAVA"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/><p id="SKJAVA">JavaScript</p></div>
+        <div class="Backkk" id="DJANGO"><img src="https://img.icons8.com/ios/70/e6e6e6/django.png"/></div>
+        <div class="Backkk" id="FAST"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12c6.626 0 12-5.373 12-12c0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z" fill="#2bc2a7"/></svg><p id="SKFAST">FastAPI</p> </div>
+      </div>
+
+      <div class="Skeee d-block d-xl-none">
+          <div class="Extra" id="SEOOO"><img src="https://img.icons8.com/external-justicon-lineal-justicon/48/f9f9fa/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png"/><p id="SKSEO">SEO</p></div>
+          <div class="Extra" id="GIT"><img src="https://img.icons8.com/color/60/000000/git.png"/><p id="SKGIT">Git</p></div>
+          <div class="Extra" id="AUTH"><img src="images/Oauth.png"/><p id="SKAUTH">OAuth2</p></div>
+          <div class="Extra" id="STRIPE"><img src="https://img.icons8.com/ios/70/e6e6e6/stripe.png"/></div>
+      </div>
+
+      <div class="Skeeee d-block d-xl-none">
+        <div class="DB" id="PSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/> <p id="SKPSQL">PostgreSQL</p> </div>
+        <div class="DB" id="MYSQL"><img src="https://img.icons8.com/ios-filled/70/e6e6e6/mysql-logo.png"/></div>
+        <div class="DB" id="DB2"><img src="images/DB2.png"/></div>
+      </div>
+
+    <div class="Click"> <h4 class="d-none d-xl-block">Zweef op de taart om mijn vaardigheden te zien</h4> <p>Een website is als een cake,<br> het bestaat uit lagen en elk geeft een unieke smaak aan het geheel.</p> </div>
+      </div>
+
+</div>
     </div>
 
         <script>
-        $(window).scroll(function(){
-          $(".Awesomeness").css("opacity",1-$(window).scrollTop()/300);
-        });
-
-
-          const typedTextSpan = document.querySelector(".typed-text");
-      const cursorSpan = document.querySelector(".cursor");
-
-      const textArray = ["Creatief.", "Flexible.", "Onafhankelijk.", "Hardwerkend."];
-      const typingDelay = 200;
-      const erasingDelay = 100;
-      const newTextDelay = 2000; // Delay between current and next text
-      let textArrayIndex = 0;
-      let charIndex = 0;
-
-      function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-          typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-          charIndex++;
-          setTimeout(type, typingDelay);
-        }
-        else {
-          cursorSpan.classList.remove("typing");
-        	setTimeout(erase, newTextDelay);
-        }
-      }
-
-      function erase() {
-      	if (charIndex > 0) {
-          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-          typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-          charIndex--;
-          setTimeout(erase, erasingDelay);
-        }
-        else {
-          cursorSpan.classList.remove("typing");
-          textArrayIndex++;
-          if(textArrayIndex>=textArray.length) textArrayIndex=0;
-          setTimeout(type, typingDelay + 1100);
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-        if(textArray.length) setTimeout(type, newTextDelay + 250);
-      });
-
-
+        //Different scrolling speeds
       $.fn.moveIt = function() {
         var $els = $(this);
         var $window = $(window);
@@ -229,6 +267,68 @@ if (y > 500) {
         $('[data-s-speed]').moveIt();
       });
 
+          //Text disappear onscroll
+        $(window).scroll(function(){
+          $(".Awesomeness").css("opacity",1-$(window).scrollTop()/250);
+        });
+
+
+        //Automated text writing
+          const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
+
+      const textArray = ["Creatief.", "Flexible.", "Zelfstandig.","Rigoureus."];
+      const typingDelay = 200;
+      const erasingDelay = 100;
+      const newTextDelay = 2000; // Delay between current and next text
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        }
+        else {
+          cursorSpan.classList.remove("typing");
+          setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        }
+        else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if(textArrayIndex>=textArray.length) textArrayIndex=0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+        if(textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+
+      //Modal/Popups
+
+            var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+      })
+
+        // Language popup
+        function togglePopup(){
+        document.getElementById("popup-1").classList.toggle("active");
+        }
 
     </script>
   </div>
@@ -257,48 +357,206 @@ if (y > 500) {
     </script>
   <div class="col-sm-4 Quo" id="Quo1">
 <p>
-"Code-verslaafde. Niet in staat om nuchter te worden. In de hoop nooit genezen te worden."
+"Hoe meer je leert, hoe creatiever je kunt zijn."
  </p>
  </div>
  <div class="col-sm-4 Quo" id="Quo2">
 <p>
-"Ik heb niets nieuws uitgevonden. Ik heb gewoon de ontdekkingen verzameld van andere mannen achter wie eeuwenlang werk zat. Als ik vijftig of tien of zelfs vijf jaar eerder had gewerkt, zou ik hebben gefaald. Zo is het met elk nieuw ding. Vooruitgang gebeurt wanneer alle de factoren die ervoor zorgen zijn klaar, en dan is het onvermijdelijk. Om te leren dat een relatief weinig mensen verantwoordelijk zijn voor de grootste voorwaartse stappen van de mensheid is de ergste soort onzin.' ~Henry Ford
+"Ik heb niets nieuws uitgevonden. Ik verzamelde gewoon de ontdekkingen van andere mannen waar eeuwen werk achter zat. Als ik vijftig of tien of zelfs vijf jaar eerder had gewerkt, zou ik gefaald hebben. Zo is het met elk nieuw ding. Vooruitgang vindt plaats wanneer alle factoren die ervoor zorgen klaar zijn, en dan is het onvermijdelijk. Leren dat relatief weinig mannen verantwoordelijk zijn voor de grootste stappen voorwaarts van de mensheid is de ergste soort onzin." ~Henry Ford
 </p>
 </div>
 </section>
   </div>
-
 <div class="Products" id="Products">
 <h1 id="Prod">Producten</h1>
-    <div class="Propro col-5 col-lg-3" id="BasicT"><h2 id="PB">Basic Website</h2> <div class="Hodor" id="HBT"><p><br><br>Kies uit verschillende sjablonen om een website van één pagina te krijgen!<br><br>&emsp;&emsp;&emsp;~499€ </p></div> </div>
-    <div class="Propro col-5 col-lg-3" id="ProT"><h2 id="PT">Traditional Website</h2> <div class="Hodor" id="HPT"><p><br><br>Kies uit verschillende sjablonen om een website van MEERDERE paginas te krijgen!<br><br>&emsp;&emsp;&emsp;~799€</p></div></div>
-    <div class="Propro col-5 col-lg-3" id="PersoT"><h2 id="PP">Pro Website</h2> <div class="Hodor" id="HPerT"><p><br><br>Krijg een volledig gepersonaliseerde website met een volledige walkthrough!<br><br>&emsp;&emsp;&emsp;~1299€</p></div></div>
-    <div class="Propro col-5 col-lg-3" id="API"><h2 id="PA">API</h2> <div class="Hodor" id="HAPI"><p><br><br>Integreer een API<br><br>&emsp;&emsp;&emsp;~499€</p></div></div>
-    <div class="Propro col-5 col-lg-3" id="MapI"><h2 id="PM">Map</h2> <div class="Hodor" id="HMI"><p><br><br>Integreer een kaart <br><br>&emsp;&emsp;&emsp;~499€</p></div></div>
-    <div class="Propro col-5 col-lg-3" id="SEO"><h2 id="PS">SEO</h2> <div class="Hodor" id="HSEO"><p><br><br>Rankeer uw website hoger op Google <br><br>&emsp;&emsp;&emsp;~699€ </p></div></div>
-</div>
-<div id="Productss"></div>
+<div id="Productss">  </div>
+<div class="card_area">
+    <div class="card_container">
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal1">
+      <div class="box">
+        <div class="card_content">
+          <h2>01</h2>
+          <h3>Basis Website</h3>
+          <p>Kies uit verschillende sjablonen om een prachtige website te krijgen!</p>
+          <p class="Price">899 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal1" tabindex="-1" aria-labelledby="card_modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal1Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact"> Laat me je sjablonen zien en praat erover</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal2">
+      <div class="box">
+        <div class="card_content">
+          <h2>02</h2>
+          <h3>Geavanceerde Website</h3>
+          <p>Kies uit verschillende sjablonen EN krijg extra gepersonaliseerde functies!</p>
+          <p class="Price">1099 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal2" tabindex="-1" aria-labelledby="card_modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal2Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Laat me je sjablonen zien en praat erover</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal3">
+      <div class="box">
+        <div class="card_content">
+          <h2>03</h2>
+          <h3><br><br>Volledig op maat gemaakte website</h3>
+          <p class="card_text">Jij beveelt, ik doe het werk. <br><br> E-commerce? Login? Databases? Data visualisatie? <br> I maak het!</p>
+          <p class="Price">1399 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal3" tabindex="-1" aria-labelledby="card_modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal3Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Laten we uw doelen bespreken!</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal4">
+      <div class="box">
+        <div class="card_content">
+          <h2>04</h2>
+          <h3>Api Integratie</h3>
+          <p>Integreer een API <br>(login, tracking data, etc.)</p>
+          <p class="Price">649 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal4" tabindex="-1" aria-labelledby="card_modal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal4Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Laten we uw doelen bespreken!</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal5">
+      <div class="box">
+        <div class="card_content">
+          <h2>05</h2>
+          <h3>Kaart Integratie</h3>
+          <p>Put a map on your website so everyone can see you!</p>
+          <p class="Price">199 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal5" tabindex="-1" aria-labelledby="card_modal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal5Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Laten we uw doelen bespreken!</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <a class="card" data-bs-toggle="modal" data-bs-target="#card_modal6">
+      <div class="box">
+        <div class="card_content">
+          <h2>06</h2>
+          <h3>SEO</h3>
+          <p>Zet de kansen aan uw kant door hoger te ranken in Google!</p>
+          <p class="Price">799 $</p>
+        </div>
+        </div>
+      </a>
+      <div class="modal fade" id="card_modal6" tabindex="-1" aria-labelledby="card_modal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="card_modal6Label">Let's talk business:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Laten we uw doelen bespreken!</a></button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+    </div>
+
 
 
 <div class="Contact" id="Contact">
   <div class="containerr">
   <div class="FormBox">
       <form method="post">
-          <h2 id="h2">Contact me</h2>
+          <h2 id="h2">Contacteer me</h2>
           <div class="InputBox">
               <input type="text" name="name" required="required">
-              <span class="spann">Name</span>
+              <span class="spann">Naam</span>
           </div>
           <div class="InputBox">
               <input type="email" name="email" required="required">
-              <span class="spann">Email</span>
+              <span class="spann">E-mail</span>
           </div>
           <div class="InputBox">
               <textarea name="message" required="required"></textarea>
-              <span class="spann">Your message</span>
+              <span class="spann">Uw bericht</span>
           </div>
           <div class="InputBox" id="Submit">
-              <input type="submit" id="submittt" value="Send">
+              <input type="submit" id="submittt" value="Versturen">
           </div>
           <?php
             if(!empty($_POST))
@@ -312,10 +570,10 @@ if (y > 500) {
                 $mailHeaders = "From: " . $name . "<". $email .">\r\n";
 
                 if (mail($toEmail, $subject, $message, $mailHeaders)) {
-                    echo "<alert id='success'> Thank you for your message, <br><br> we will reach back as soon as possible! </alert>";
+                    echo "<alert id='success'> Bedankt voor uw bericht, <br><br> ik zal zo snel mogelijk contact met u opnemen! </alert>";
                 }
           else {
-                    echo "<alert id='failed'> Message could not be sent, <br><br> try again and otherwise do not worry<br><br> we are working on it! </alert>";
+                    echo "<alert id='failed'> Bericht kon niet worden verzonden, <br><br> probeer het opnieuw en maak je anders geen zorgen<br><br> we werken eraan! </alert>";
                 }
             }
           ?>
