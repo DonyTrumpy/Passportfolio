@@ -8,6 +8,7 @@ $susy:(
 @include border-box-sizing;
 
 
+/* General settings for the entire page  */
 
 * {
 margin: 0;
@@ -16,6 +17,9 @@ box-sizing: border-box;
 font-family:sans-serif;
 }
 body{background:#f9f9fa;width: 100%;overflow-x: hidden;opacity:0.94;}
+
+
+/* Customized scroll bar */
 ::-webkit-scrollbar {
 	background: #ddd;
 }
@@ -129,7 +133,7 @@ nav img{height:75px; width:200px;margin-left:40px;margin-top:15px;}
 
 
 
-/* JOURNEY */
+/* JOURNEY (this is the 'welcome' part where the user first arrives) */
 .TreeWater{position: relative;top: 0;left:0;height:670px;width:100%;
 background-size: cover;background-clip: border-box;background-repeat: no-repeat;
  z-index: 0;background-attachment: fixed;
@@ -142,12 +146,12 @@ cursor: url("https://img.icons8.com/external-tulpahn-outline-color-tulpahn/80/00
 .Awesomeness a{text-decoration: none;color:#f9f9fa;padding: 10px;padding-right: 20px;padding-left:20px;background-image: linear-gradient(to right,#E700B7,#FF007B,#FF794E,#FFBF42);border-radius: 36px;position: absolute;top:210px;left:44%;}
 .Awesomeness a:hover{transition: 0.3s;filter: brightness(1.45);}
 
-/* INTRODUCTION */
+/* INTRODUCTION (Little forword about how I got into coding)*/
 .ThisIsMe{position: relative;height:200px;width:100%;background-color:#004099;}
 .ThisIsMe h2{position:absolute;top:20px;left:5vw;color:#FFBF42;font-size: 38px;}
 .ThisIsMe p{position:absolute;top:90px;left:5vw;color:#fff;font-size: 16px;}
 
-/* MY WEBSITES  */
+/* MY WEBSITES (Here I display my most important works)  */
 
 .Space1{ position: relative;@include container; text-align: center;}
 
@@ -331,17 +335,15 @@ transition:0.5s ease-in-out;}
 .modal{height:300px;width:300px;left:40vw;top:220px;}
 .aaa{color:#fff; text-decoration: none;}.aaa:hover{color:#fff;}
 .btn-primary{margin-bottom: 7px;}
-.btn-warning{margin-bottom: 7px;background-color:#FFBF42;border-color:#FFBF42;}
-.btn-warning:hover{background-color:#f6b62c;border-color:#f6b62c;}
 
 .contentt a{text-decoration:none; color:#fff;position: absolute;left:57px;background-color:#552ced; padding:10px;}
 .contentt a:hover{background-color:#0e0e6b;}
 #Wkinemap{padding-left: 40px;padding-right: 40px;}#Ckinemap{padding-left: 50px;padding-right: 52px;}
 .Wkinemap{top:60px;}.Ckinemap{top:120px;}
-/*Parallax*/
+/*Parallax (From the landing space image)*/
 .Beach{height:200px;width:60%;z-index:1;position: relative;top:600px;left:20%;}
 
-/* ABOUT */
+/* ABOUT/ SKILLS (My skills and the automated text)*/
 #Aboutt{height: 200px;width: 400px;position: absolute;top:1974px;}
 
 .container{position: absolute;top:-200px;}
@@ -400,6 +402,9 @@ transition:0.5s ease-in-out;}
 .Oignonn:hover + .Skii{visibility:visible;}
 .Oignonnn:hover + .Skiii{visibility:visible;}
 .Oignonnnn:hover + .Skiiii{visibility:visible;}
+
+
+/* SECTION FOR MY QUOTES AND THE MOVING EYES  */
 
 .Quotes{height:500px;background-image: linear-gradient(to bottom right, #0E0E6B,#004099,#006AB6,#0092C2);position: relative;top:300px;font-size: 16px;color:#fff;
 	cursor: url("https://img.icons8.com/color/48/000000/cookie.png"),auto;
@@ -587,6 +592,10 @@ transition:0.5s ease-in-out;}
         #failed{position: absolute;top:48%;left:60vw;}
 
 
+
+
+
+/* MAKING EVERYTHING RESPONSIVE */
 @media only screen and (max-device-width: 1366px) {.TreeWater {background-attachment: scroll;}}
 @media only screen and (max-width: 1300px) {#JoinMe{left:10%;font-size: 24px;}#Email{font-size:18px;}#Phone{font-size:18px;}
 }
