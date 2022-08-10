@@ -37,7 +37,7 @@
       <img src="images/LogoPP.png" alt="Logo" id="Logo" onclick="window.location='../Passportfolio.html'">
 
             <a class="Ul" id="a1" href="#Passport">My works</a>
-            <a class="Ul" id="a2" href="#Aboutt">Skills</a>
+            <a class="Ul" id="a2" href="#About">Skills</a>
             <a class="Ul" id="a3" href="#Productss">Products</a>
             <a class="Ul" id="a4" href="#Contact">Contact</a>
 
@@ -65,7 +65,7 @@ if (y > 500) {
       </script>
       <div id="WTFF">
         <a id="pass"href="#Passport">My works</a>
-        <a href="#Aboutt">Skills</a>
+        <a href="#About">Skills</a>
         <a href="#Productss">Products</a>
         <a href="#Contact">Contact</a>
       </div>
@@ -74,11 +74,11 @@ if (y > 500) {
       <div class="ThisIsMe">
         <h2>How did I get into coding?</h2>
         <p>It started as a hobby, teaching myself while I got my bachelor's degree in physical therapy at the VUB.<br>
-        The passion grew slowly but intensely, I started to make a living out of it and now am as invested in it as ever!</p>
+        Immediately, I got hooked! Now I'm coding full time and living the dream!</p>
       </div>
 
 
-    <div class="Space1">
+    <div class="Space1" id="Passport">
               <div class="My">
                 <h1>My Websites</h1>
                 <div class="contained">
@@ -93,7 +93,7 @@ if (y > 500) {
                         <p>Find YOUR physical therapist online.<br>Filter among all specialisations.</p>
 
                         <a href="https://kinemap.be/" id="yellow">Go to website</a>
-                        <a href="#">Check code</a>
+                        <a href="https://github.com/DonyTrumpy/Kinemap">Check code</a>
                       </div>
                     </div>
                   </div>
@@ -104,27 +104,24 @@ if (y > 500) {
                     </div>
                     <div class="contenty">
                       <div>
-                        <img src="images/consumption.png" style="position:relative;left:0;top:0;width:170px;height:60px;" alt=" ">
                         <br><br>
-                        <p>See and compare what humans consume and what the cost is.</p>
+                        <p id="ConsumptionDescription">See and compare what humans consume and what the cost is.</p>
                         <br>
-                        <a href="../FlappyBird/index.html" id="yellow">Go to website</a>
-                        <a href="#">Check code</a>
+                        <a href="https://consumed.world/" id="yellow">Go to website</a>
+                        <a href="https://github.com/DonyTrumpy/ConsumedWorld">Check code</a>
                       </div>
                     </div>
                   </div>
 
                   <div class="cardy">
                     <div class="imgBx">
-                      <h2>Password generator</h2>
+                      <h2>Crypto Macro Space</h2>
                     </div>
                     <div class="contenty">
                       <div>
-                        <img src="images/password.jpeg" style="position:relative;left:0;top:10px;width:90px;height:75px;" alt=" ">
                         <br>
-                        <p>Get a fully random and secure password with the settings you want!</p>
-                        <a href="#" id="yellow">Go to website</a>
-                        <a href="#">Check code</a>
+                        <p>Need some help with understanding the markets, specifically crypto? We give you the big picture and what to look for.</p>
+                        <a href="#" id="yellow">Coming very soon</a>
                       </div>
                     </div>
                   </div>
@@ -138,22 +135,21 @@ if (y > 500) {
                         <img src="images/fraudeur.jpeg" style="position:relative;left:0;top:10px;width:90px;height:80px;" alt=" ">
                         <p>All you need for a safe and easy trip with Brussels' public transports.</p>
                         <br>
-                        <a href="#" id="yellow">Go to website</a>
-                        <a href="#">Check code</a>
+                        <a href="#" id="yellow">Coming soon</a>
                       </div>
                     </div>
                   </div>
 
                   <div class="cardy">
                     <div class="imgBx">
-                      <h2>Flappy Basketball</h2>
+                      <h2>Flappy Ball</h2>
                     </div>
                     <div class="contenty">
                       <div>
                         <p>Based on the original Flappy Bird that made it to Wall Street. Mostly focussing on the JavaScript</p>
                         <br>
                         <a href="../FlappyBird/index.html" id="yellow">Go to website</a>
-                        <a href="#">Check code</a>
+                        <a href="https://github.com/DonyTrumpy/FlappyBall">Check code</a>
                       </div>
                     </div>
                   </div>
@@ -381,7 +377,7 @@ if (y > 500) {
           <h2>01</h2>
           <h3>Basic Website</h3>
           <p>Get to choose from different templates to get a gorgeous website!</p>
-          <p class="Price">699 $</p>
+          <p class="Price">899 $</p>
         </div>
         </div>
       </a>
@@ -393,8 +389,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact"> Show me your templates </a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact"> Show me your templates and have a talk</a></button>
               </div>
 
           </div>
@@ -408,7 +403,7 @@ if (y > 500) {
           <h2>02</h2>
           <h3>Advanced Website</h3>
           <p>Get to choose from different templates AND get additional personalized features!</p>
-          <p class="Price">899 $</p>
+          <p class="Price">1099 $</p>
         </div>
         </div>
       </a>
@@ -420,8 +415,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact"> Show me your templates </a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact"> Show me your templates and have a talk</a></button>
               </div>
 
           </div>
@@ -436,7 +430,7 @@ if (y > 500) {
           <h2>03</h2>
           <h3><br><br>Fully Customized Website</h3>
           <p class="card_text">You command, I apply. <br><br> E-commerce? Login? Databases? Data visualization? <br> I got you!</p>
-          <p class="Price">1199 $</p>
+          <p class="Price">1399 $</p>
         </div>
         </div>
       </a>
@@ -448,8 +442,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss...</a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss your goals!</a></button>
               </div>
 
           </div>
@@ -475,8 +468,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss...</a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss your goals!</a></button>
               </div>
 
           </div>
@@ -502,8 +494,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss...</a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss your goals!</a></button>
               </div>
 
           </div>
@@ -529,8 +520,7 @@ if (y > 500) {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss...</a></button>
-              <button type="button" class="btn btn-warning"><a class="aaa" href="https://github.com/"> I'm in ! </a></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a class="aaa" href="#Contact">Let's discuss your goals!</a></button>
               </div>
 
           </div>
